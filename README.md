@@ -1,0 +1,1 @@
+# MapChatGo Android application
