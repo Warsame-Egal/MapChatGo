@@ -1,4 +1,4 @@
-package com.example.warsa.chat;
+package com.example.warsa.MapChatGo.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
 import android.view.View.OnClickListener;
+import com.example.warsa.MapChatGo.R;
 
 public class RegisterActivity extends AppCompatActivity {
 

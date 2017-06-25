@@ -1,7 +1,9 @@
-package com.example.warsa.chat;
+package com.example.warsa.MapChatGo.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.warsa.MapChatGo.R;
 
 
 public class MainActivity extends AppCompatActivity {

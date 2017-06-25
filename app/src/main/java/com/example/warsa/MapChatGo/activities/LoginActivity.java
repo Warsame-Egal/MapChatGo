@@ -1,10 +1,12 @@
-package com.example.warsa.chat;
+package com.example.warsa.MapChatGo.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.warsa.MapChatGo.R;
 
 public class LoginActivity extends AppCompatActivity {
 
