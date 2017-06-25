@@ -1,4 +1,4 @@
-package com.example.warsa.chat;
+package com.example.warsa.MapChatGo;
 
 import org.junit.Test;
 

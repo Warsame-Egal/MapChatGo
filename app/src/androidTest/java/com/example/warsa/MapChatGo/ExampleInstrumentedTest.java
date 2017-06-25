@@ -1,4 +1,4 @@
-package com.example.warsa.chat;
+package com.example.warsa.MapChatGo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

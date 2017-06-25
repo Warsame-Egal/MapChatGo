@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Chat</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="gotoregister">gotoRegister</string>
+    <string name="gotologin">gotoLogin</string>
+    <string name="registerbutton">registerButton</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last Name</string>
+    <string name="password_match">Password Match</string>
+    <string name="passworrd">passworrd</string>
 </resources>

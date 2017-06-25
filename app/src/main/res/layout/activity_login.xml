@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.warsa.chat.LoginActivity">
+    tools:context="com.example.warsa.MapChatGo.activities.LoginActivity">
 
     <EditText
         android:id="@+id/userName"
@@ -14,7 +14,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="68dp"
         android:ems="10"
-        android:hint="User Name"
+        android:hint="@string/user_name"
         android:inputType="textPersonName"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -29,7 +29,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="17dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -43,7 +43,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="10dp"
-        android:text="Login"
+        android:text="@string/login"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
@@ -57,7 +57,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Register"
+        android:hint="@string/gotoregister"
         android:inputType="textPersonName"
         android:textAlignment="center"
         android:onClick="redirect"
