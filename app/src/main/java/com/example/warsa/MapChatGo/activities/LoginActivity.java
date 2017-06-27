@@ -114,17 +114,18 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             return;
         }
 
-        if (databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim()
-                , textInputEditTextPassword.getText().toString().trim())) {
+//        if (databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim()
+//                , textInputEditTextPassword.getText().toString().trim())) {
+//
+//
+//            Intent accountsIntent = new Intent(activity, UsersListActivity.class);
+//            accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
+//            emptyInputEditText();
+//            startActivity(accountsIntent);
 
 
-            Intent accountsIntent = new Intent(activity, UsersListActivity.class);
-            accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
-            emptyInputEditText();
-            startActivity(accountsIntent);
-
-
-        } else {
+       // }
+        else {
             // Snack Bar to show success message that record is wrong
             Snackbar.make(nestedScrollView, getString(R.string.error_valid_email_password), Snackbar.LENGTH_LONG).show();
         }
