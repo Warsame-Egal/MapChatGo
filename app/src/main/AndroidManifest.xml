@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.warsa.MapChatGo.activities.MainActivity"/>
         <activity android:name="com.example.warsa.MapChatGo.activities.LoginActivity" />
         <activity android:name="com.example.warsa.MapChatGo.activities.RegisterActivity">
             <intent-filter>  <!-- filter for a certain activity -->
