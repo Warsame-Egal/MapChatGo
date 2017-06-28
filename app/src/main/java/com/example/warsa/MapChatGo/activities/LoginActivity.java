@@ -83,14 +83,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     /**
      * This implemented method is to listen the click on view
-     *
-     * @param v
      */
     @Override
     public void onClick(View v) {
+
         switch (v.getId()) {
             case R.id.appCompatButtonLogin:
                 verifyFromSQLite();
+                // SHARED PREFERENCES
+//                Intent intentProfile = new Intent(getApplicationContext(), ProfileActivity.class);
+//                startActivity(intentProfile);
+
                 break;
             case R.id.textViewLinkRegister:
                 // Navigate to RegisterActivity
@@ -98,6 +101,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intentRegister);
                 break;
         }
+    }
+
+    public void sharedPrefrences() {
+
     }
 
     /**
@@ -114,18 +121,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             return;
         }
 
-//        if (databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim()
-//                , textInputEditTextPassword.getText().toString().trim())) {
-//
-//
-//            Intent accountsIntent = new Intent(activity, UsersListActivity.class);
-//            accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
-//            emptyInputEditText();
-//            startActivity(accountsIntent);
+        if (databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim()
+                , textInputEditTextPassword.getText().toString().trim())) {
 
 
-       // }
-        else {
+            Intent accountsIntent = new Intent(activity, ProfileActivity.class);
+            accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());
+            emptyInputEditText();
+            startActivity(accountsIntent);
+
+
+        } else {
             // Snack Bar to show success message that record is wrong
             Snackbar.make(nestedScrollView, getString(R.string.error_valid_email_password), Snackbar.LENGTH_LONG).show();
         }

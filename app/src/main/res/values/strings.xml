@@ -24,4 +24,6 @@
     <string name="text_hello">Hello,</string>
     <string name="text_title">Android Tutorials Hub</string>
     <string name="AlreadyamemberLogin">Already a member? Login</string>
+    <string name="appCompatDeleteButton">Delete Account</string>
+    <string name="appCompatLogoutButton">Logout</string>
 </resources>

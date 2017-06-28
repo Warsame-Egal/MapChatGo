@@ -5,11 +5,19 @@ import android.os.Bundle;
 
 import com.example.warsa.MapChatGo.R;
 
-public class Profile extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+    }
+
+    public void getUserAccount() {
+
+    }
+
+    public void displayUserAccount() {
+
     }
 }

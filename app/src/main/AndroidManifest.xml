@@ -5,22 +5,17 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_title"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.LoginActivity" android:label="@string/login_title">
-            <intent-filter>
-            </intent-filter>
-        </activity>
-        <activity android:name=".activities.RegisterActivity" android:label="@string/register_title">
+        <activity android:name=".activities.LoginActivity"/>
+        <activity android:name=".activities.RegisterActivity">
             <intent-filter> <!-- filter for a certain activity -->
                 <action android:name="android.intent.action.MAIN" /> <!-- set as main activity at startup -->
                 <category android:name="android.intent.category.LAUNCHER" /> <!-- launch activity -->
             </intent-filter>
         </activity>
-        <activity android:name=".activities.Profile" android:label="@string/profile_title">
-            <intent-filter>
-            </intent-filter>
-        </activity>
+        <activity android:name=".activities.ProfileActivity"/>
     </application>
 </manifest>
