@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.ProfileActivity"/>
         <activity android:name=".activities.LoginActivity"/>
         <activity android:name=".activities.RegisterActivity">
             <intent-filter> <!-- filter for a certain activity -->
@@ -16,6 +17,5 @@
                 <category android:name="android.intent.category.LAUNCHER" /> <!-- launch activity -->
             </intent-filter>
         </activity>
-        <activity android:name=".activities.ProfileActivity"/>
     </application>
 </manifest>

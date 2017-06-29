@@ -11,6 +11,7 @@ import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.util.Log;
 import android.view.View;
+import android.content.SharedPreferences;
 
 import com.example.warsa.MapChatGo.R;
 import com.example.warsa.MapChatGo.helpers.InputValidation;
@@ -104,7 +105,24 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public void sharedPrefrences() {
+        SharedPreferences preferences = getSharedPreferences("MYPREFS",MODE_PRIVATE); // preferences mode
 
+        String emailPref = textInputEditTextEmail.getText().toString(); //pass email value into string
+        String passwordPref = textInputEditTextPassword.getText().toString(); //pass password value into string
+
+        SharedPreferences.Editor editor = preferences.edit(); //pass preferences into an editor
+
+        //put values into key/valye then commit
+        editor.putString(emailPref,emailPref);
+        editor.commit();
+        editor.putString(passwordPref, passwordPref);
+        editor.commit();
+        editor.putString(emailPref + passwordPref + "data", emailPref);
+        editor.commit();
+
+        String userDetails = preferences.getString(emailPref + passwordPref + "data","No information on that user.");
+        editor.putString("display",userDetails);
+        editor.commit();
     }
 
     /**
@@ -124,6 +142,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (databaseHelper.checkUser(textInputEditTextEmail.getText().toString().trim()
                 , textInputEditTextPassword.getText().toString().trim())) {
 
+            sharedPrefrences(); //save logged in user into shared preferences
 
             Intent accountsIntent = new Intent(activity, ProfileActivity.class);
             accountsIntent.putExtra("EMAIL", textInputEditTextEmail.getText().toString().trim());

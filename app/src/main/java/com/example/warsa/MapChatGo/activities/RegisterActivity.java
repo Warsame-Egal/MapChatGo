@@ -16,6 +16,7 @@ import com.example.warsa.MapChatGo.model.User;
 import com.example.warsa.MapChatGo.sql.DatabaseHelper;
 import android.content.Intent;
 import android.view.View.OnClickListener;
+import android.content.SharedPreferences;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
 
